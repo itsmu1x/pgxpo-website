@@ -1,0 +1,130 @@
+html {
+    color-scheme: light;
+}
+
+html.dark {
+    color-scheme: dark;
+}
+
+.container {
+    max-width: 320;
+}
+
+@media (min-width: 480px) {
+    .container {
+        max-width: 420px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 550px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1240px;
+    }
+}
+
+.dashdivider {
+    margin-top: 2rem !important;
+}
+
+.divider {
+    margin-top: 6rem !important;
+}
+
+@media (min-width: 768px) {
+    .divider {
+        margin-top: 9rem !important;
+    }
+
+    .dashdivider {
+        margin-top: 4rem !important;
+    }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgba(15, 15, 15, 0.3);
+    opacity: 0.6;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.44, #15144e),
+        color-stop(0.72, #15144e),
+        color-stop(0.86, #15144e)
+    );
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(15, 15, 15, 0.3);
+    opacity: 0.6;
+}
+
+.colored-toast.swal2-icon-success {
+    background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+    background-color: #f27474 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+    background-color: #f8bb86 !important;
+}
+
+.colored-toast.swal2-icon-info {
+    background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+    color: white;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}

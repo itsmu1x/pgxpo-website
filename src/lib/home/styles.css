@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tabitem {
+    @apply after:block after:w-0 after:hover:w-full after:px-0 after:mx-auto after:duration-300 after:h-[2px];
+}
+
+.tabitem.active {
+    @apply after:w-full;
+}
+
+.muborder {
+    @apply border-[#ebebeb] dark:border-[#c2d4f81a];
+}
+
+.txt {
+    @apply text-darkbody dark:text-lightwhite;
+}
