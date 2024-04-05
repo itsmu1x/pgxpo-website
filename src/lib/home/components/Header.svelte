@@ -6,10 +6,10 @@
     import cn from "$lib/cn"
     import Icon from "@iconify/svelte"
     import Hamburger from "./Hamburger.svelte"
-    import Login from "./Login.svelte"
     import MyProfile from "./MyProfile.svelte"
     import outside from "$lib/outside"
     import DashNav from "./DashNav.svelte"
+    import darkmode, { darkIcon, lightIcon } from "$lib/contexts/darkmode"
 
     let sticky: boolean = false
     let opened: boolean = false
@@ -33,12 +33,13 @@
 
     const darkmodize = async () => {
         try {
-            // const { data } = await axios.patch("/auth/darkmode")
-            // if (data && "mode" in data && typeof data.mode === "boolean") {
-            //     $darkmode = data.mode
-            //     document.documentElement.classList.toggle("light", !data.mode)
-            //     document.documentElement.classList.toggle("dark", data.mode)
-            // }
+            const response = await fetch("/darkmode", { method: "PATCH" })
+            const data = await response.json()
+            if (data && "mode" in data && typeof data.mode === "boolean") {
+                $darkmode = data.mode
+                document.documentElement.classList.toggle("light", !data.mode)
+                document.documentElement.classList.toggle("dark", data.mode)
+            }
         } catch {}
     }
 
@@ -97,7 +98,7 @@
                     aria-label="DarkMode Change"
                 >
                     <Icon
-                        icon="material-symbols-light:clear-night"
+                        icon={$darkmode ? darkIcon : lightIcon}
                         width="32"
                         height="32"
                     />
@@ -152,7 +153,7 @@
                             on:click={darkmodize}
                         >
                             <Icon
-                                icon="material-symbols-light:clear-night"
+                                icon={$darkmode ? darkIcon : lightIcon}
                                 width="32"
                                 height="32"
                             />

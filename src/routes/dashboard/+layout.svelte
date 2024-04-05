@@ -47,35 +47,35 @@
             href: "/dashboard/store",
             optional: true,
         },
-        { type: "spacer" },
-        {
-            type: "title",
-            text: "Tickets",
-        },
-        {
-            type: "nav",
-            text: "Tickets",
-            icon: "ion:ticket-sharp",
-            href: "/dashboard/tickets",
-        },
-        {
-            type: "nav",
-            text: "Staff",
-            icon: "fa-solid:user-tie",
-            href: "/dashboard/tickets/support",
-        },
-        {
-            type: "nav",
-            text: "Review",
-            icon: "fa6-solid:magnifying-glass",
-            href: "/dashboard/tickets/review",
-        },
-        {
-            type: "nav",
-            text: "Categories",
-            icon: "uiw:bar-chart",
-            href: "/dashboard/tickets/manage",
-        },
+        // { type: "spacer" },
+        // {
+        //     type: "title",
+        //     text: "Tickets",
+        // },
+        // {
+        //     type: "nav",
+        //     text: "Tickets",
+        //     icon: "ion:ticket-sharp",
+        //     href: "/dashboard/tickets",
+        // },
+        // {
+        //     type: "nav",
+        //     text: "Staff",
+        //     icon: "fa-solid:user-tie",
+        //     href: "/dashboard/tickets/support",
+        // },
+        // {
+        //     type: "nav",
+        //     text: "Review",
+        //     icon: "fa6-solid:magnifying-glass",
+        //     href: "/dashboard/tickets/review",
+        // },
+        // {
+        //     type: "nav",
+        //     text: "Categories",
+        //     icon: "uiw:bar-chart",
+        //     href: "/dashboard/tickets/manage",
+        // },
 
         { type: "spacer" },
         {

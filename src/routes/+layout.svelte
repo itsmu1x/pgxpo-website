@@ -1,5 +1,10 @@
 <script lang="ts">
     import "../app.css"
+    import type { LayoutServerData } from "./$types"
+    import darkmode from "$lib/contexts/darkmode"
+
+    export let data: LayoutServerData
+    $: $darkmode = data.mode
 </script>
 
 <svelte:head>
