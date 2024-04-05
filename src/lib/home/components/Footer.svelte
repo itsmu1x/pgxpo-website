@@ -37,7 +37,8 @@
                 >
                 <ul class="flex gap-4">
                     <li><a class="txt" href="#?"> Our rules </a></li>
-                    <li><a class="txt" href="#?"> Our rules </a></li>
+                    <li><a class="txt" target="_blank" href="https://github.com/itsmu1x/pgxpo-website"> Github </a></li>
+                    <li><a class="txt" target="_blank" href="https://instagram.com/itsmu1x"> Instagram </a></li>
                 </ul>
             </div>
         </div>
