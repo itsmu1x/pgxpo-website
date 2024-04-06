@@ -1,7 +1,7 @@
 import type { PageServerLoad } from "./$types"
 import UAParser from "ua-parser-js"
 
-export const load: PageServerLoad = async ({ locals, request, getClientAddress }) => {
+export const load: PageServerLoad = async ({ request, getClientAddress }) => {
     const parse = new UAParser(
         request.headers.get("User-Agent") ?? undefined
     )

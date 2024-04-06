@@ -1,7 +1,3 @@
-<script lang="ts">
-    import shape from "$lib/home/assets/imgs/footer_shape.png"
-</script>
-
 <footer
     class="divider relative z-[1] bg-cover bg-center bg-no-repeat overflow-hidden border-t border-gray-200 dark:border-gray-800"
 >
@@ -36,7 +32,7 @@
                     >PGxPO &copy; 2015 - {new Date().getFullYear()}</span
                 >
                 <ul class="flex gap-4">
-                    <li><a class="txt" href="#?"> Our rules </a></li>
+                    <li><a class="txt" href="/rules"> Our rules </a></li>
                     <li><a class="txt" target="_blank" href="https://github.com/itsmu1x/pgxpo-website"> Github </a></li>
                     <li><a class="txt" target="_blank" href="https://instagram.com/itsmu1x"> Instagram </a></li>
                 </ul>
